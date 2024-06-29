@@ -14,15 +14,15 @@ const ProductDetail = () => {
     })();
   }, []);
   return (
-    <div>
-      <div className="row grid-6">
-        <div className="">
-          <img src={p.thumbnail} alt="" />
-          <div className="khungct2">
+    <div className="container w-50  py-6 mx-auto border border-gray-200 rounded-lg shadow">
+      <div className="col-5">
+        <div className="sidebar">
+          <img src={p.thumbnail} width={300} alt="" />
+          <div className="">
             <h2>{p.title}</h2>
             <p>Giá: {p.price}$</p>
             <p>Mô tả: {p.description}</p>
-            <button className="btn btn-danger">Mua luon</button>
+            <button className="btn btn-danger">Mua ngay</button>
           </div>
         </div>
       </div>
